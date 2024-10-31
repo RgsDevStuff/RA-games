@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Cps Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="../resources/images/RA-Games icon.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="1s.html">1s</a></li>
+            <li><a href="index.html">10s</a></li>
+            <li><a href="100s.html">100s</a></li>
+            <li><a href="../Games.html">Games</a></li>
+            <li><a href="download/BUILDGAME.zip">download Simple Cps Game</a></li>
+        </ul>
+    </nav>
+    <div id="game-container">
+        <h1>Simple Cps Game</h1>
+        <p id="instructions">Click the button as many times as you can!</p>
+        <button id="click-button" onclick="handleClick()" disabled>Click Me!</button>
+        <p id="timer">Time left: 10s</p>
+        <p id="score">Score: 0</p>
+        <button id="start-button" onclick="startGame()">Start Game</button>
+        <p id="end-message" class="hidden"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
